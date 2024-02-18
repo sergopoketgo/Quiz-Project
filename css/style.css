@@ -1,0 +1,237 @@
+/*Importing fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap");
+
+/*Null styles*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    line-height: normal;
+}
+
+/*Styles*/
+body {
+    font-family: "Economica", sans-serif;
+    font-weight: 700;
+    color: #112342;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f3ff;
+    user-select: none;
+}
+
+/*Menu Section*/
+.section-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-menu__balance {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 75px 0;
+    width: 329px;
+    /*height: 174px;*/
+    background: url("../img/png/balance-bg.png") center/contain no-repeat;  /*center/contain no-repeat*/
+}
+
+.section-menu__balance-number {
+    color: #1f4211;
+    font-size: 65px;
+}
+
+.section-menu__start-btn {
+    transition: .2s;
+    cursor: pointer;
+    filter: drop-shadow(0 7px 0 #523200);
+}
+
+.section-menu__start-btn:hover {
+    transform: scale(110%);
+}
+
+.section-menu__start-btn:active {
+    transform: translateY(7px) scale(110%);
+    filter: none;
+}
+
+.section-menu__start-btn-img {
+    width: 225px;
+    height: 225px;
+}
+
+/*Game Section*/
+.section-game {
+    /*display: flex;*/
+    justify-content: center;
+    display: none;
+}
+
+.section-game__bar {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+}
+
+.section-game__left-bar {
+    align-items: end;
+    transform: perspective(500px) rotate3d(0,1,0, 15deg);
+}
+
+.section-game__right-bar {
+    transform: perspective(500px) rotate3d(0,1,0, -15deg);
+}
+
+.section-game__heart {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: 5px 0;
+}
+
+.section-game__heart-solid {
+    width: 75px;
+    height: 75px;
+}
+
+.section-game__heart-left {
+    display: none;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+}
+
+.section-game__heart-right {
+    display: none;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+}
+
+.section-game__status {
+    position: relative;
+    left: -15px;
+    top: -10px;
+    display: none;
+}
+
+.section-game__quiz {  /*Center Game Quiz*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url("../img/png/section-game-bg.png") center/contain no-repeat;
+    padding: 65px;
+}
+
+/*.section-game__image {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+}*/
+
+.section-game__question {  /*Game Question*/
+    font-size: 80px;
+    margin-bottom: 70px;
+    cursor: help;
+}
+
+.section-game__cards {  /*Game Cards*/
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+}
+
+.section-game__card {  /*General For All Game Cards*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/png/section-game__card-bg.png") 0 0/100% 100% no-repeat;
+    filter: drop-shadow(0 5px 0 #173665);
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.section-game__card:hover {
+    transform: scale(110%);
+}
+
+.section-game__card:active {
+    transform: translateY(5px) scale(110%);
+    filter: none;
+}
+
+.card_left_shadow {  /*Left Cards (Shadow)*/
+    filter: drop-shadow(-4px 5px 0 #173665);
+}
+
+.card_left_shadow:active {
+    transform: translate(-5px, 5px) scale(110%);
+}
+
+.card_right_shadow {  /*Right Cards (Shadow)*/
+    filter: drop-shadow(4px 5px 0 #173665);
+}
+
+.card_right_shadow:active {
+    transform: translate(5px, 5px) scale(110%);
+}
+
+.section-game__card-number {  /*Game Cards Numbers*/
+    font-size: 45px;
+}
+
+.no-drag {
+    pointer-events: none;
+}

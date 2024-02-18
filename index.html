@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Гогаєв Сергій"/>
+    <title>Проєкт «Квіз»</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="apple-touch-icon" href="img/ico/apple-touch-icon.ico" sizes="180x180" type="image/x-icon"/>
+    <link rel="icon" href="img/ico/icon-16x16.ico" sizes="16x16" type="image/x-icon"/>
+    <link rel="icon" href="img/ico/icon-32x32.ico" sizes="32x32" type="image/x-icon"/>
+</head>
+<body>
+    <main>
+        <section class="section-menu">
+            <div class="section-menu__balance">
+                <p class="section-menu__balance-number"></p>
+            </div>
+            <div class="section-menu__start-btn">
+                <img class="section-menu__start-btn-img no-drag" src="img/png/play-btn5.png" alt="">
+            </div>
+        </section>
+        <section class="section-game">  <!--data-tilt data-tilt-max="25" data-tilt-speed="100" data-tilt-perspective="1500"-->
+<!--            <img class="section-game__image" src="img/ico/icon-16x16.ico"/>-->
+            <aside class="section-game__left-bar section-game__bar">
+                <div class="section-game__heart">
+                    <img src="img/png/section-game__heart-solid.png" alt="" class="section-game__heart-solid no-drag">
+                    <img src="img/png/section-game__heart-left.png" alt="" class="section-game__heart-left no-drag">
+                    <img src="img/png/section-game__heart-right.png" alt="" class="section-game__heart-right no-drag">
+                </div>
+                <div class="section-game__heart">
+                    <img src="img/png/section-game__heart-solid.png" alt="" class="section-game__heart-solid no-drag">
+                    <img src="img/png/section-game__heart-left.png" alt="" class="section-game__heart-left no-drag">
+                    <img src="img/png/section-game__heart-right.png" alt="" class="section-game__heart-right no-drag">
+                </div>
+                <div class="section-game__heart">
+                    <img src="img/png/section-game__heart-solid.png" alt="" class="section-game__heart-solid no-drag">
+                    <img src="img/png/section-game__heart-left.png" alt="" class="section-game__heart-left no-drag">
+                    <img src="img/png/section-game__heart-right.png" alt="" class="section-game__heart-right no-drag">
+                </div>
+<!--                <img class="section-game__heart no-drag" src="img/png/section-game__heart-solid.png" alt="">-->
+<!--                <img class="section-game__heart no-drag" src="img/png/section-game__heart-solid.png" alt="">-->
+<!--                <img class="section-game__heart no-drag" src="img/png/section-game__heart-solid.png" alt="">-->
+            </aside>
+            <div class="section-game__quiz">
+                <h1 class="section-game__question"></h1>
+
+                <div class="section-game__cards">
+                    <div class="section-game__card card_left_shadow">
+                        <p class="section-game__card-number"></p>
+                    </div>
+                    <div class="section-game__card card_left_shadow">
+                        <p class="section-game__card-number"></p>
+                    </div>
+                    <div class="section-game__card">
+                        <p class="section-game__card-number"></p>
+                    </div>
+                    <div class="section-game__card card_right_shadow">
+                        <p class="section-game__card-number"></p>
+                    </div>
+                    <div class="section-game__card card_right_shadow">
+                        <p class="section-game__card-number"></p>
+                    </div>
+                </div>
+            </div>
+            <aside class="section-game__right-bar section-game__bar">
+                <img class="section-game__status no-drag" src="" alt="">
+            </aside>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
